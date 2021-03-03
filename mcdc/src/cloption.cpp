@@ -193,7 +193,7 @@
 #include "cloption.hpp"
 #include <cctype>
 #include <filesystem>
-
+#include <algorithm>
 
 // A major part of this program deals with sending output to the screen or to files
 // This is handled with a customized iostream.

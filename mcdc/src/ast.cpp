@@ -63,8 +63,8 @@
 #include <iostream>
 #include <iomanip>
 #include <cctype>
-#include <sstream> 
-
+#include <sstream>
+#include <cstring>
 
 
 // Depending on selected program options, we will show the abstract syntax tree with attributes
@@ -185,7 +185,7 @@ void VirtualMachineForAST::printTree(std::ostream& os)
 						outputLastPosition = lastPosition;
 					}
 					// Copy the temporary string to the output buffer (that is full of spaces) to the calculated column . 
-					memcpy(&out[0] + (static_cast<ull>(tab) * static_cast<ull>(ast[i].level)), strTemp.c_str(), strTemp.size());
+					std::memcpy(&out[0] + (static_cast<ull>(tab) * static_cast<ull>(ast[i].level)), strTemp.c_str(), strTemp.size());
 				}
 			}
 		}

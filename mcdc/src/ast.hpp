@@ -60,7 +60,7 @@
 
 
 
-
+#include <climits>
 #include "types.hpp"
 #include "token.hpp"
 #include "symboltable.hpp"

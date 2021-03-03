@@ -72,6 +72,7 @@
 #include <iostream>
 #include <bitset>
 #include <iomanip>
+#include <cmath>
 
 
 
@@ -223,7 +224,7 @@ void printTruthTable(const std::string& source, MintermVector& mintermVector, co
 	const uint32 maxEvaluations{ bitMask[symbolCount] };
 	// The width of a string containg the decimal equivalent of the biggest number
 	// Needed for formatting
-	const MinTermType maxLengthDecimalEquivalent{ static_cast<uint>(std::log10(maxEvaluations)) + 1 };
+	const MinTermType maxLengthDecimalEquivalent{ static_cast<uint>(log10(maxEvaluations)) + 1 };
 
 	// Determine where the output is streamed to
 	const bool predicateForOutputToFile{ (symbolCount > 4) };

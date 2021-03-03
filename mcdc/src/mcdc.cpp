@@ -123,6 +123,7 @@
 #include "coverage.hpp"
 #include "ast.hpp"
 
+#include <cstring>
 #include <iostream>
 #include <iomanip>
 
