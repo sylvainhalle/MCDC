@@ -105,7 +105,7 @@ void VirtualMachineForBooleanExpressions::load(ObjectCode& objectCode, const std
 			os << std::setw(8) << counter << " L    " << narrow_cast<cchar>(opCodeLine.parameter3) << "         --> R" << gMR(opCodeLine.parameter2) << '\n';
 			// Set the "execution function" which is implemented as lambda
 			executableCodeLine.execute = [&](uint a, uint b, uint c) {	this->operationLoadID(a, b, c); };
-			// And then copy the üarameters, which are virtual machine registers
+			// And then copy the Ã¼arameters, which are virtual machine registers
 			executableCodeLine.parameter1 = objectCode.symbolTable.normalizedInput[opCodeLine.parameter1];
 			executableCodeLine.parameter2 = opCodeLine.parameter2;
 			break;
@@ -114,7 +114,7 @@ void VirtualMachineForBooleanExpressions::load(ObjectCode& objectCode, const std
 			// Print to the output destination and calculate max register number
 			os << std::setw(8) << counter << " LN   " << narrow_cast<cchar>(opCodeLine.parameter3) << "         --> R" << gMR(opCodeLine.parameter2) << '\n';
 			executableCodeLine.execute = [&](uint a, uint b, uint c) {	this->operationLoadNotID(a, b, c); };
-			// And then copy the üarameters, which are virtual machine registers
+			// And then copy the Ã¼arameters, which are virtual machine registers
 			executableCodeLine.parameter1 = objectCode.symbolTable.normalizedInput[opCodeLine.parameter1];
 			executableCodeLine.parameter2 = opCodeLine.parameter2;
 
@@ -124,7 +124,7 @@ void VirtualMachineForBooleanExpressions::load(ObjectCode& objectCode, const std
 			os << std::setw(8) << counter << " OR   R" <<  std::setw(2) << opCodeLine.parameter1 << "  R" << std::setw(2) << opCodeLine.parameter2 << "  --> R" << gMR(opCodeLine.parameter3) << '\n';
 			// Set the "execution function" which is implemented as lambda
 			executableCodeLine.execute = [&](uint a, uint b, uint c) {	this->operationOr(a, b, c); };
-			// And then copy the üarameters, which are virtual machine registers
+			// And then copy the Ã¼arameters, which are virtual machine registers
 			executableCodeLine.parameter1 = opCodeLine.parameter1;
 			executableCodeLine.parameter2 = opCodeLine.parameter2;
 			executableCodeLine.parameter3 = opCodeLine.parameter3;
@@ -134,7 +134,7 @@ void VirtualMachineForBooleanExpressions::load(ObjectCode& objectCode, const std
 			os << std::setw(8) << counter << " XOR  R" << std::setw(2) << opCodeLine.parameter1 << "  R" << std::setw(2) << opCodeLine.parameter2 << "  --> R" << gMR(opCodeLine.parameter3) << '\n';
 			// Set the "execution function" which is implemented as lambda
 			executableCodeLine.execute = [&](uint a, uint b, uint c) {	this->operationXor(a, b, c); };
-			// And then copy the üarameters, which are virtual machine registers
+			// And then copy the Ã¼arameters, which are virtual machine registers
 			executableCodeLine.parameter1 = opCodeLine.parameter1;
 			executableCodeLine.parameter2 = opCodeLine.parameter2;
 			executableCodeLine.parameter3 = opCodeLine.parameter3;
@@ -144,7 +144,7 @@ void VirtualMachineForBooleanExpressions::load(ObjectCode& objectCode, const std
 			os << std::setw(8) << counter << " AND  R" <<  std::setw(2) << opCodeLine.parameter1 << "  R" << std::setw(2) << opCodeLine.parameter2 << "  --> R" << gMR(opCodeLine.parameter3) << '\n';
 			// Set the "execution function" which is implemented as lambda
 			executableCodeLine.execute = [&](uint a, uint b, uint c) {	this->operationAnd(a, b, c); };
-			// And then copy the üarameters, which are virtual machine registers
+			// And then copy the Ã¼arameters, which are virtual machine registers
 			executableCodeLine.parameter1 = opCodeLine.parameter1;
 			executableCodeLine.parameter2 = opCodeLine.parameter2;
 			executableCodeLine.parameter3 = opCodeLine.parameter3;
@@ -154,7 +154,7 @@ void VirtualMachineForBooleanExpressions::load(ObjectCode& objectCode, const std
 			os << std::setw(8) << counter << " NOT  R" <<  std::setw(2) << opCodeLine.parameter1 << "       --> R" << gMR(opCodeLine.parameter2) << '\n';
 			// Set the "execution function" which is implemented as lambda
 			executableCodeLine.execute = [&](uint a, uint b, uint c) {	this->operationNot(a, b, c); };
-			// And then copy the üarameters, which are virtual machine registers
+			// And then copy the Ã¼arameters, which are virtual machine registers
 			executableCodeLine.parameter1 = opCodeLine.parameter1;
 			executableCodeLine.parameter2 = opCodeLine.parameter2;
 			break;
@@ -163,7 +163,7 @@ void VirtualMachineForBooleanExpressions::load(ObjectCode& objectCode, const std
 			os << std::setw(8) << counter << " END            --> R" << gMR(opCodeLine.parameter1) << '\n';
 			// Set the "execution function" which is implemented as lambda
 			executableCodeLine.execute = [&](uint a, uint b, uint c) {	this->operationEnd(a, b, c); };
-			// And then copy the üarameters, which are virtual machine registers
+			// And then copy the Ã¼arameters, which are virtual machine registers
 			executableCodeLine.parameter1 = opCodeLine.parameter1;
 			break;
 #pragma warning(suppress: 4061)

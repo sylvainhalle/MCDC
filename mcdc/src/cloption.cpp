@@ -729,7 +729,7 @@ void ProgramOption::readOptionsFromFile(std::ifstream& infile, uint& level)
 			// If we shall read a next string from the input stream
 			if (doRead)
 			{
-				// Then do that and handle quote´d strings
+				// Then do that and handle quoteÂ´d strings
 				infile >> std::quoted(optionWord, '"', '\000');
 			}
 			else

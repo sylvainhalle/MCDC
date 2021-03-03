@@ -211,7 +211,7 @@ struct CommandLineOption
 	// Running number of Option Identifier. Option maybe selected through this
 	sint id;	
 
-	// The option identification Strin´g, something like "-fd"
+	// The option identification StrinÂ´g, something like "-fd"
 	std::string optionIdentificationString;
 	// If an option has a parameter, like a filename, it will be stored here
 	std::string optionParameterString;

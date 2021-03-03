@@ -131,7 +131,7 @@ void  QuineMcluskey::initializeCoverageForPrimeImplicants(Coverage& coverageForP
 // This is a call back function
 bool checkCoverForCell(const CellVectorHeader& minTermRowHeader, CellVectorHeader& primeImplicantColumnHeader)
 {
-	// The Prime Implicant Info has been stored in the any field of the column header´. Get it
+	// The Prime Implicant Info has been stored in the any field of the column headerÂ´. Get it
 	const PrimeImplicantType resultingPrimeImplicant{ std::any_cast<PrimeImplicantType>(primeImplicantColumnHeader.userData) };
 	// And, get the minterm
 	const MinTermType mtnMinTerm{ minTermRowHeader.index };
@@ -575,7 +575,7 @@ uint QuineMcluskey::getLowestIndexOfBitCountEntry(uint indexReductionTableColumn
 
 
 // This is a little bit hard to understand. Lets give it a try
-// Sínce comparing rows bit certain number of set bits is a very time and memory consuming
+// SÃ­nce comparing rows bit certain number of set bits is a very time and memory consuming
 // operation, we will uses multithrading to reduce calculation time
 // We need to compare ranges with number of set bits. For example we need to
 // compare a subtable that has 4 bits with a subtable that has 3 bits. And so one

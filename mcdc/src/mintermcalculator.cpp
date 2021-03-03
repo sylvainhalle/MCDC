@@ -142,7 +142,7 @@ MintermVector MintermCalculator::calculate()
 		numberOfBooleanVariables = objectCode.symbolTable.numberOfSymbols();
 		const uint maxEvaluations{ 1U << numberOfBooleanVariables };
 
-		// If we have more than 10 boolean variables, then we will use multí threading to calculate the minterms
+		// If we have more than 10 boolean variables, then we will use multÃ­ threading to calculate the minterms
 		if (numberOfBooleanVariables > 10)
 		{
 			// Claculate the ranges to be calculated by each thread

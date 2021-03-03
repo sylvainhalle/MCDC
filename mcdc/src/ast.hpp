@@ -54,7 +54,7 @@
 // Also Booelan Short Cut Evealuation can be taken into account.
 //
 // The tree can be printed to the screen or in a file. For easier reading, the printout is turned
-// 90° counter clock wise.
+// 90Â° counter clock wise.
 //
 // The virtual Machine for AST is used to perform operations on ASTs
 
